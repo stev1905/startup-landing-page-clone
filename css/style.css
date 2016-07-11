@@ -13,6 +13,9 @@ div {
 }
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .top-navigation > .content { /*Control Navbar size, width and height*/
     padding: 0px 30px;
@@ -96,4 +99,25 @@ div {
 }
 .button button:hover {
     background-color: #d9400e;
+}
+.cases .devices {
+	text-align: center;
+    width: 20%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    border: 1px solid black;
+    box-sizing: border-box;
+    /*height: 4em;*/
+  margin-right: -4px;
+}
+.cases{
+	text-align: center;
+}
+.caption h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
 }
