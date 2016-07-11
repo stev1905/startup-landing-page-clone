@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
     background-color: LightGray;
 }
@@ -7,8 +14,77 @@ div {
 .top-navigation {
     background-color: #fff;
 }
-.top-navigation > .content {
-    width: 970px;
-    height: 70px;
+.top-navigation > .content { /*Control Navbar size, width and height*/
+    padding: 0px 30px;
+     height: 70px;
     margin: 0 auto;
+    width: 970px;
+   
+}
+.content img{ /*CSS image settingse*/
+	margin: 8px auto;
+	height: 40px;
+}
+.top-navigation .links { /*set font and margins for text of nav links*/
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;  /*vertically aligns links*/
+    margin-left: 25px;
+}
+.top-navigation .links > .active { /*Bolds Class for Meet Karma link*/
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover { /*Controls hover over afffect*/
+    cursor: pointer;
+    color: #333333;
+}
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
+.content > h1, h3{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+    color:white;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+}
+.introduction h1{
+    margin-top: 17.5rem;
+    margin-bottom: 5px;
+    font-size: 3.125rem;
+}
+.introduction h3{
+	margin-top: 7px;
+	margin-bottom: 13px;
+    font-size: 1.563rem;
+}
+.content button{
+	text-align: center;
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+.button{
+	text-align: center;
+}
+.button button:hover {
+    background-color: #d9400e;
 }
